@@ -1,0 +1,17 @@
+<div class="container">
+  <form [formGroup]="inscriptionForm" (ngSubmit)="inscription()">
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" aria-describedby="emailHelp" formControlName="email">
+    </div>
+    <div class="mb-3">
+      <label for="nom" class="form-label">Nom</label>
+      <input type="text" class="form-control" id="nom" formControlName="nom">
+    </div>
+    <div class="mb-3">
+      <label for="prenom" class="form-label">Prenom</label>
+      <input type="text" class="form-control" id="prenom" formControlName="prenom">
+    </div>
+    <button type="submit" class="btn btn-primary">Envoyer</button>
+  </form>
+</div>
