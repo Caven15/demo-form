@@ -24,6 +24,7 @@ export class HomeComponent implements OnInit {
         }
         else{
           this.message = "non enregistré..."
+          console.log("toto")
         }
       }
     })
